@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+
+    Licensed to Universite de Rouen under one or more contributor license
+    agreements. See the NOTICE file distributed with this work for
+    additional information regarding copyright ownership.
+
+    Universite de Rouen licenses this file to you under the Apache License,
+    Version 2.0 (the "License"); you may not use this file except in
+    compliance with the License. You may obtain a copy of the License at:
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show create="false" delete="false" id="ps_fr_normandieuniv_cpmnws_db_CpmnPerso" object="${cpmnperso}" path="/cpmnpersos" update="false" z="XBCx78gW3AF5OjSyyi2gllBYES0=">
+        <field:display field="noIndividu" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_noIndividu" label="noIndividu" object="${cpmnperso}"/>
+        <field:display field="libelle" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_libelle" object="${cpmnperso}" z="3gCiTA97c0iT/WwKo11lvh2ekHU="/>
+        <field:display field="statut" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_statut" object="${cpmnperso}" z="41i1CkDQT8zC4L/ERWi0HF5tunQ="/>
+        <field:display field="employeur" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_employeur" object="${cpmnperso}" z="9vHAoZ8WGCiNIxr+DjdiExv9KxQ="/>
+        <field:display field="nomCarte" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_nomCarte" object="${cpmnperso}" z="qEEGEaB7B5Dh7sMF1w2J8jjBx20="/>
+        <field:display field="nomUsuel" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_nomUsuel" object="${cpmnperso}" z="dutD8MalAodlekbwo3g2m0wam/g="/>
+        <field:display field="nomPatronymique" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_nomPatronymique" object="${cpmnperso}" z="FqDhPei/eHapxU/I6VC+p74mUxk="/>
+        <field:display field="prenom" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_prenom" object="${cpmnperso}" z="h2xte6h/HHx1nC+GlzSsVjLEK5g="/>
+        <field:display field="reference" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_reference" object="${cpmnperso}" z="dnbL+kSnn6DXEBnE7NzZioUG/2U="/>
+        <field:display calendar="true" dateTimePattern="${cpmnPerso_dnaissance_date_format}" field="DNaissance" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_dNaissance" object="${cpmnperso}" z="DNd7i90zCpRMk5/NcskF7YPMvtI="/>
+        <field:display calendar="true" dateTimePattern="${cpmnPerso_ddebval_date_format}" field="DDebVal" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_dDebVal" object="${cpmnperso}" z="LIItNJLXy4nEld/RnVgchGnKxXw="/>
+        <field:display field="DFinVal" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_dFinVal" object="${cpmnperso}" z="tlTYtjlGln8BRBRbXoX+tppimzM="/>
+        <field:display field="numBu" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_numBu" object="${cpmnperso}" z="RAr5EcHJVBCrjZ7R1vZ2TC2Y+8M="/>
+        <field:display field="idPresUn" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_idPresUn" object="${cpmnperso}" z="jqvFPwXLjpfSYF6svx+MKOsOoiE="/>
+        <field:display field="photo" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_photo" object="${cpmnperso}" z="LqzRw5DGaAzNfhvneGhr9I8FhaI="/>
+        <field:display field="droitPhoto" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_droitPhoto" object="${cpmnperso}" z="HnCfV/sLBJ4ZtLX10o8mSwDv+3s="/>
+        <field:display field="indice" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_indice" object="${cpmnperso}" z="+X/Y3NH/tVPGrojAAeNGHEJpvCA="/>
+        <field:display field="tarif" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_tarif" object="${cpmnperso}" z="w314JxONC8TScQIRI7j1ZzmJ9e4="/>
+        <field:display field="nomCrous" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_nomCrous" object="${cpmnperso}" z="njQqLnm/NnD/nLE+A+kmGpB/IXE="/>
+        <field:display field="prenomCrous" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_prenomCrous" object="${cpmnperso}" z="+iZvDHssbV9xOCHvJxP56MaenGU="/>
+        <field:display field="etabRne" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_etabRne" object="${cpmnperso}" z="a7HDT20ItVb9NKWA2O0du8cxFOw="/>
+        <field:display field="compRne" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_compRne" object="${cpmnperso}" z="9dlEh9UPLom/NX2/jv2PP5W9B/g="/>
+        <field:display field="email" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_email" object="${cpmnperso}" z="flQVyDS4G0M7etp07PIyGK0yTg0="/>
+        <field:display field="societe" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_societe" object="${cpmnperso}" z="SLXil9mLcXeoaWsja/H0vFnR2jk="/>
+        <field:display field="telPort" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_telPort" object="${cpmnperso}" z="48WQPyHWrB1lUSsNNr/uszKHHVM="/>
+        <field:display field="anneeUniv" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_anneeUniv" object="${cpmnperso}" z="ZEqDtDM0J4HY5rcTGF2vzocYGXQ="/>
+        <field:display field="corps" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_corps" object="${cpmnperso}" z="AQssBX1O5TwwvTcLnhdS68fR0iQ="/>
+        <field:display field="population" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_population" object="${cpmnperso}" z="p1ORXhSuu45bv+PKqfIrxRGKMcQ="/>
+        <field:display field="typePopulation" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_typePopulation" object="${cpmnperso}" z="UbszqY6ObKWBLy43/z+AnT/ATss="/>
+        <field:display field="codeBarre" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_codeBarre" object="${cpmnperso}" z="pI1SN99EJEDYVYpm4KggO/0fysM="/>
+    </page:show>
+</div>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+
+    Licensed to Universite de Rouen under one or more contributor license
+    agreements. See the NOTICE file distributed with this work for
+    additional information regarding copyright ownership.
+
+    Universite de Rouen licenses this file to you under the Apache License,
+    Version 2.0 (the "License"); you may not use this file except in
+    compliance with the License. You may obtain a copy of the License at:
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="ws" label="Web Service" z="user-managed">
+            <menu:item id="ws_url" label="Web Service" messageCode="global_generic" url="/ws" z="user-managed"/>
+        </menu:category>
+        <menu:category id="c_controller" label="Test du Web Service" z="user-managed">
+            <menu:item id="i_controller__searchwstestindex_id" label="Méthode Search" messageCode="global_generic" url="/searchwstest/index" z="user-managed"/>
+        </menu:category>
+        <menu:category id="c_cpmnperso" label="Requêtes 'directes' en BD" z="user-managed">
+            <menu:item id="i_cpmnperso_list" messageCode="global_menu_list" url="/cpmnpersos?page=1&amp;size=${empty param.size ? 10 : param.size}" z="user-managed"/>
+            <menu:item id="fi_cpmnperso_anneeunivequals" messageCode="global_menu_find" url="/cpmnpersos?find=ByAnneeUnivEquals&amp;form" z="jHppQniOhr8xG1FiywpVwLy5HqE="/>
+            <menu:item id="fi_cpmnperso_anneeunivequalsandnoindividuequals" messageCode="global_menu_find" url="/cpmnpersos?find=ByAnneeUnivEqualsAndNoIndividuEquals&amp;form" z="fTU4gI0+/FbNdK3tw4T9bA/6uy8="/>
+            <menu:item id="fi_cpmnperso_anneeunivequalsandnoindividuequalsandnomcartelike" messageCode="global_menu_find" url="/cpmnpersos?find=ByAnneeUnivEqualsAndNoIndividuEqualsAndNomCarteLike&amp;form" z="NxcNMOeNlHBRjxt2hidpd0b9XBk="/>
+            <menu:item id="fi_cpmnperso_anneeunivequalsandnoindividuequalsoranneeunivequalsandnomcartelike" messageCode="global_menu_find" url="/cpmnpersos?find=ByAnneeUnivEqualsAndNoIndividuEqualsOrAnneeUnivEqualsAndNomCarteLike&amp;form" z="pogx9SFjo+tL8gQ7AmbIXl1x/Vc="/>
+            <menu:item id="fi_cpmnperso_anneeunivequalsandnomcartelike" messageCode="global_menu_find" url="/cpmnpersos?find=ByAnneeUnivEqualsAndNomCarteLike&amp;form" z="Q2fA0SNB/D50+MTc/ssGSHxLBso="/>
+        </menu:category>
+    </menu:menu>
+</div>
