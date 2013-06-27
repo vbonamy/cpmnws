@@ -34,3 +34,7 @@ finder list
 finder list 
 finder list 
 finder list 
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-06-26 17:29:35
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-06-27 10:49:48
+database reverse engineer --package fr.normandieuniv.cpmnws.db --schema HARP_ADM --enableViews --includeTables "V_NORMANDIE_LEOCARTE_PERSO"
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-06-27 11:36:04

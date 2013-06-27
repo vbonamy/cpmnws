@@ -38,8 +38,10 @@ privileged aspect CpmnPerso_Roo_DbManaged {
     @DateTimeFormat(style = "MM")
     private Calendar CpmnPerso.dDebVal;
     
-    @Column(name = "D_FIN_VAL", length = 0)
-    private String CpmnPerso.dFinVal;
+    @Column(name = "D_FIN_VAL")
+    @Temporal(TemporalType.TIMESTAMP)
+    @DateTimeFormat(style = "MM")
+    private Calendar CpmnPerso.dFinVal;
     
     @Column(name = "NUM_BU")
     private BigDecimal CpmnPerso.numBu;
@@ -151,11 +153,11 @@ privileged aspect CpmnPerso_Roo_DbManaged {
         this.dDebVal = dDebVal;
     }
     
-    public String CpmnPerso.getDFinVal() {
+    public Calendar CpmnPerso.getDFinVal() {
         return dFinVal;
     }
     
-    public void CpmnPerso.setDFinVal(String dFinVal) {
+    public void CpmnPerso.setDFinVal(Calendar dFinVal) {
         this.dFinVal = dFinVal;
     }
     

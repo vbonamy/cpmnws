@@ -33,7 +33,7 @@
         <field:display field="reference" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_reference" object="${cpmnperso}" z="dnbL+kSnn6DXEBnE7NzZioUG/2U="/>
         <field:display calendar="true" dateTimePattern="${cpmnPerso_dnaissance_date_format}" field="DNaissance" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_dNaissance" object="${cpmnperso}" z="DNd7i90zCpRMk5/NcskF7YPMvtI="/>
         <field:display calendar="true" dateTimePattern="${cpmnPerso_ddebval_date_format}" field="DDebVal" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_dDebVal" object="${cpmnperso}" z="LIItNJLXy4nEld/RnVgchGnKxXw="/>
-        <field:display field="DFinVal" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_dFinVal" object="${cpmnperso}" z="tlTYtjlGln8BRBRbXoX+tppimzM="/>
+        <field:display calendar="true" dateTimePattern="${cpmnPerso_dfinval_date_format}" field="DFinVal" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_dFinVal" object="${cpmnperso}" z="JyGqCQ26/5NuJy23oukUFMms028="/>
         <field:display field="numBu" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_numBu" object="${cpmnperso}" z="RAr5EcHJVBCrjZ7R1vZ2TC2Y+8M="/>
         <field:display field="idPresUn" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_idPresUn" object="${cpmnperso}" z="jqvFPwXLjpfSYF6svx+MKOsOoiE="/>
         <field:display field="photo" id="s_fr_normandieuniv_cpmnws_db_CpmnPerso_photo" object="${cpmnperso}" z="LqzRw5DGaAzNfhvneGhr9I8FhaI="/>
