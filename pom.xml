@@ -4,7 +4,7 @@
     <groupId>fr.normandieuniv.cpmnws</groupId>
     <artifactId>cpmnws</artifactId>
     <packaging>war</packaging>
-    <version>1.0.1</version>
+    <version>1.0.2-SNAPSHOT</version>
     <name>cpmnws</name>
     <properties>
         <aspectj.version>1.7.0</aspectj.version>
