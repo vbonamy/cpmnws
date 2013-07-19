@@ -25,7 +25,7 @@ privileged aspect CpmnPerso_Roo_DbManaged {
     @Column(name = "PRENOM", length = 20)
     private String CpmnPerso.prenom;
     
-    @Column(name = "REFERENCE", length = 13)
+    @Column(name = "REFERENCE", length = 100)
     private String CpmnPerso.reference;
     
     @Column(name = "D_NAISSANCE")
@@ -33,27 +33,73 @@ privileged aspect CpmnPerso_Roo_DbManaged {
     @DateTimeFormat(style = "MM")
     private Calendar CpmnPerso.dNaissance;
     
-    @Column(name = "D_DEB_VAL")
-    @Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(style = "MM")
-    private Calendar CpmnPerso.dDebVal;
+    @Column(name = "LIBELLE_CARTE", length = 100)
+    private String CpmnPerso.libelleCarte;
     
     @Column(name = "D_FIN_VAL")
     @Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "MM")
     private Calendar CpmnPerso.dFinVal;
     
+    @Column(name = "TYPE_POPULATION_LIBELLE", length = 40)
+    private String CpmnPerso.typePopulationLibelle;
+    
+    @Column(name = "TYPE_POPULATION_CODE", length = 40)
+    private String CpmnPerso.typePopulationCode;
+    
+    @Column(name = "ADRESSE_ETABLISSEMENT", length = 100)
+    private String CpmnPerso.adresseEtablissement;
+    
+    @Column(name = "STRUCTURE_AFF_LIBELLE", length = 20)
+    private String CpmnPerso.structureAffLibelle;
+    
+    @Column(name = "STRUCTURE_AFF_CODE", length = 5)
+    private String CpmnPerso.structureAffCode;
+    
+    @Column(name = "STRUCTURE_AFF_RNE", length = 8)
+    private String CpmnPerso.structureAffRne;
+    
+    @Column(name = "CORPS", length = 40)
+    private String CpmnPerso.corps;
+    
+    @Column(name = "LOGIN", length = 100)
+    private String CpmnPerso.login;
+    
+    @Column(name = "RESPONSABILITE_STRUC", length = 100)
+    private String CpmnPerso.responsabiliteStruc;
+    
+    @Column(name = "COTISATION_PARTICULIERE", length = 100)
+    private String CpmnPerso.cotisationParticuliere;
+    
+    @Column(name = "TRANSMISSION_DONNEES_CROUS")
+    private BigDecimal CpmnPerso.transmissionDonneesCrous;
+    
     @Column(name = "NUM_BU")
     private BigDecimal CpmnPerso.numBu;
     
-    @Column(name = "ID_PRES_UN", length = 0)
-    private String CpmnPerso.idPresUn;
+    @Column(name = "LEOCODE", length = 108)
+    private String CpmnPerso.leocode;
+    
+    @Column(name = "LOGO_ETABLISSEMENT", length = 0)
+    private String CpmnPerso.logoEtablissement;
     
     @Column(name = "PHOTO", length = 0)
     private String CpmnPerso.photo;
     
     @Column(name = "DROIT_PHOTO")
     private BigDecimal CpmnPerso.droitPhoto;
+    
+    @Column(name = "ANNEE_UNIV")
+    private BigDecimal CpmnPerso.anneeUniv;
+    
+    @Column(name = "SUAPS", length = 100)
+    private String CpmnPerso.suaps;
+    
+    @Column(name = "ETABLISSEMENT", length = 100)
+    private String CpmnPerso.etablissement;
+    
+    @Column(name = "STATUT_CROUS", length = 100)
+    private String CpmnPerso.statutCrous;
     
     @Column(name = "INDICE")
     private String CpmnPerso.indice;
@@ -73,29 +119,17 @@ privileged aspect CpmnPerso_Roo_DbManaged {
     @Column(name = "COMP_RNE", length = 8)
     private String CpmnPerso.compRne;
     
-    @Column(name = "EMAIL", length = 0)
+    @Column(name = "EMAIL", length = 100)
     private String CpmnPerso.email;
     
     @Column(name = "SOCIETE")
     private BigDecimal CpmnPerso.societe;
     
-    @Column(name = "TEL_PORT", length = 11)
+    @Column(name = "EMPLOYEUR", length = 100)
+    private String CpmnPerso.employeur;
+    
+    @Column(name = "TEL_PORT", length = 100)
     private String CpmnPerso.telPort;
-    
-    @Column(name = "ANNEE_UNIV")
-    private BigDecimal CpmnPerso.anneeUniv;
-    
-    @Column(name = "CORPS", length = 40)
-    private String CpmnPerso.corps;
-    
-    @Column(name = "POPULATION", length = 40)
-    private String CpmnPerso.population;
-    
-    @Column(name = "TYPE_POPULATION", length = 4)
-    private String CpmnPerso.typePopulation;
-    
-    @Column(name = "CODE_BARRE")
-    private BigDecimal CpmnPerso.codeBarre;
     
     public String CpmnPerso.getNomCarte() {
         return nomCarte;
@@ -145,12 +179,12 @@ privileged aspect CpmnPerso_Roo_DbManaged {
         this.dNaissance = dNaissance;
     }
     
-    public Calendar CpmnPerso.getDDebVal() {
-        return dDebVal;
+    public String CpmnPerso.getLibelleCarte() {
+        return libelleCarte;
     }
     
-    public void CpmnPerso.setDDebVal(Calendar dDebVal) {
-        this.dDebVal = dDebVal;
+    public void CpmnPerso.setLibelleCarte(String libelleCarte) {
+        this.libelleCarte = libelleCarte;
     }
     
     public Calendar CpmnPerso.getDFinVal() {
@@ -161,6 +195,94 @@ privileged aspect CpmnPerso_Roo_DbManaged {
         this.dFinVal = dFinVal;
     }
     
+    public String CpmnPerso.getTypePopulationLibelle() {
+        return typePopulationLibelle;
+    }
+    
+    public void CpmnPerso.setTypePopulationLibelle(String typePopulationLibelle) {
+        this.typePopulationLibelle = typePopulationLibelle;
+    }
+    
+    public String CpmnPerso.getTypePopulationCode() {
+        return typePopulationCode;
+    }
+    
+    public void CpmnPerso.setTypePopulationCode(String typePopulationCode) {
+        this.typePopulationCode = typePopulationCode;
+    }
+    
+    public String CpmnPerso.getAdresseEtablissement() {
+        return adresseEtablissement;
+    }
+    
+    public void CpmnPerso.setAdresseEtablissement(String adresseEtablissement) {
+        this.adresseEtablissement = adresseEtablissement;
+    }
+    
+    public String CpmnPerso.getStructureAffLibelle() {
+        return structureAffLibelle;
+    }
+    
+    public void CpmnPerso.setStructureAffLibelle(String structureAffLibelle) {
+        this.structureAffLibelle = structureAffLibelle;
+    }
+    
+    public String CpmnPerso.getStructureAffCode() {
+        return structureAffCode;
+    }
+    
+    public void CpmnPerso.setStructureAffCode(String structureAffCode) {
+        this.structureAffCode = structureAffCode;
+    }
+    
+    public String CpmnPerso.getStructureAffRne() {
+        return structureAffRne;
+    }
+    
+    public void CpmnPerso.setStructureAffRne(String structureAffRne) {
+        this.structureAffRne = structureAffRne;
+    }
+    
+    public String CpmnPerso.getCorps() {
+        return corps;
+    }
+    
+    public void CpmnPerso.setCorps(String corps) {
+        this.corps = corps;
+    }
+    
+    public String CpmnPerso.getLogin() {
+        return login;
+    }
+    
+    public void CpmnPerso.setLogin(String login) {
+        this.login = login;
+    }
+    
+    public String CpmnPerso.getResponsabiliteStruc() {
+        return responsabiliteStruc;
+    }
+    
+    public void CpmnPerso.setResponsabiliteStruc(String responsabiliteStruc) {
+        this.responsabiliteStruc = responsabiliteStruc;
+    }
+    
+    public String CpmnPerso.getCotisationParticuliere() {
+        return cotisationParticuliere;
+    }
+    
+    public void CpmnPerso.setCotisationParticuliere(String cotisationParticuliere) {
+        this.cotisationParticuliere = cotisationParticuliere;
+    }
+    
+    public BigDecimal CpmnPerso.getTransmissionDonneesCrous() {
+        return transmissionDonneesCrous;
+    }
+    
+    public void CpmnPerso.setTransmissionDonneesCrous(BigDecimal transmissionDonneesCrous) {
+        this.transmissionDonneesCrous = transmissionDonneesCrous;
+    }
+    
     public BigDecimal CpmnPerso.getNumBu() {
         return numBu;
     }
@@ -169,12 +291,20 @@ privileged aspect CpmnPerso_Roo_DbManaged {
         this.numBu = numBu;
     }
     
-    public String CpmnPerso.getIdPresUn() {
-        return idPresUn;
+    public String CpmnPerso.getLeocode() {
+        return leocode;
     }
     
-    public void CpmnPerso.setIdPresUn(String idPresUn) {
-        this.idPresUn = idPresUn;
+    public void CpmnPerso.setLeocode(String leocode) {
+        this.leocode = leocode;
+    }
+    
+    public String CpmnPerso.getLogoEtablissement() {
+        return logoEtablissement;
+    }
+    
+    public void CpmnPerso.setLogoEtablissement(String logoEtablissement) {
+        this.logoEtablissement = logoEtablissement;
     }
     
     public String CpmnPerso.getPhoto() {
@@ -191,6 +321,38 @@ privileged aspect CpmnPerso_Roo_DbManaged {
     
     public void CpmnPerso.setDroitPhoto(BigDecimal droitPhoto) {
         this.droitPhoto = droitPhoto;
+    }
+    
+    public BigDecimal CpmnPerso.getAnneeUniv() {
+        return anneeUniv;
+    }
+    
+    public void CpmnPerso.setAnneeUniv(BigDecimal anneeUniv) {
+        this.anneeUniv = anneeUniv;
+    }
+    
+    public String CpmnPerso.getSuaps() {
+        return suaps;
+    }
+    
+    public void CpmnPerso.setSuaps(String suaps) {
+        this.suaps = suaps;
+    }
+    
+    public String CpmnPerso.getEtablissement() {
+        return etablissement;
+    }
+    
+    public void CpmnPerso.setEtablissement(String etablissement) {
+        this.etablissement = etablissement;
+    }
+    
+    public String CpmnPerso.getStatutCrous() {
+        return statutCrous;
+    }
+    
+    public void CpmnPerso.setStatutCrous(String statutCrous) {
+        this.statutCrous = statutCrous;
     }
     
     public String CpmnPerso.getIndice() {
@@ -257,52 +419,20 @@ privileged aspect CpmnPerso_Roo_DbManaged {
         this.societe = societe;
     }
     
+    public String CpmnPerso.getEmployeur() {
+        return employeur;
+    }
+    
+    public void CpmnPerso.setEmployeur(String employeur) {
+        this.employeur = employeur;
+    }
+    
     public String CpmnPerso.getTelPort() {
         return telPort;
     }
     
     public void CpmnPerso.setTelPort(String telPort) {
         this.telPort = telPort;
-    }
-    
-    public BigDecimal CpmnPerso.getAnneeUniv() {
-        return anneeUniv;
-    }
-    
-    public void CpmnPerso.setAnneeUniv(BigDecimal anneeUniv) {
-        this.anneeUniv = anneeUniv;
-    }
-    
-    public String CpmnPerso.getCorps() {
-        return corps;
-    }
-    
-    public void CpmnPerso.setCorps(String corps) {
-        this.corps = corps;
-    }
-    
-    public String CpmnPerso.getPopulation() {
-        return population;
-    }
-    
-    public void CpmnPerso.setPopulation(String population) {
-        this.population = population;
-    }
-    
-    public String CpmnPerso.getTypePopulation() {
-        return typePopulation;
-    }
-    
-    public void CpmnPerso.setTypePopulation(String typePopulation) {
-        this.typePopulation = typePopulation;
-    }
-    
-    public BigDecimal CpmnPerso.getCodeBarre() {
-        return codeBarre;
-    }
-    
-    public void CpmnPerso.setCodeBarre(BigDecimal codeBarre) {
-        this.codeBarre = codeBarre;
     }
     
 }

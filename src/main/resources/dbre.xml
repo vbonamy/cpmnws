@@ -11,30 +11,40 @@
         <column name="NOM_PATRONYMIQUE" primaryKey="false" required="false" scale="0" size="40" type="12,VARCHAR2"/>
         <column name="PRENOM" primaryKey="false" required="false" scale="0" size="20" type="12,VARCHAR2"/>
         <column name="NO_INDIVIDU" primaryKey="false" required="false" scale="0" size="8" type="3,NUMBER"/>
-        <column name="REFERENCE" primaryKey="false" required="false" scale="0" size="13" type="12,VARCHAR2"/>
+        <column name="REFERENCE" primaryKey="false" required="false" scale="0" size="100" type="12,VARCHAR2"/>
         <column name="D_NAISSANCE" primaryKey="false" required="false" scale="0" size="7" type="93,DATE"/>
-        <column name="LIBELLE" primaryKey="false" required="false" scale="0" size="9" type="1,CHAR"/>
-        <column name="D_DEB_VAL" primaryKey="false" required="false" scale="0" size="7" type="93,DATE"/>
+        <column name="LIBELLE_CARTE" primaryKey="false" required="false" scale="0" size="100" type="12,VARCHAR2"/>
         <column name="D_FIN_VAL" primaryKey="false" required="false" scale="0" size="7" type="93,DATE"/>
+        <column name="TYPE_POPULATION_LIBELLE" primaryKey="false" required="false" scale="0" size="40" type="12,VARCHAR2"/>
+        <column name="TYPE_POPULATION_CODE" primaryKey="false" required="false" scale="0" size="40" type="12,VARCHAR2"/>
+        <column name="STATUT_POPULATION" primaryKey="false" required="false" scale="0" size="4" type="1,CHAR"/>
+        <column name="ADRESSE_ETABLISSEMENT" primaryKey="false" required="false" scale="0" size="100" type="12,VARCHAR2"/>
+        <column name="STRUCTURE_AFF_LIBELLE" primaryKey="false" required="false" scale="0" size="20" type="12,VARCHAR2"/>
+        <column name="STRUCTURE_AFF_CODE" primaryKey="false" required="false" scale="0" size="5" type="12,VARCHAR2"/>
+        <column name="STRUCTURE_AFF_RNE" primaryKey="false" required="false" scale="0" size="8" type="12,VARCHAR2"/>
+        <column name="CORPS" primaryKey="false" required="false" scale="0" size="40" type="12,VARCHAR2"/>
+        <column name="LOGIN" primaryKey="false" required="false" scale="0" size="100" type="12,VARCHAR2"/>
+        <column name="RESPONSABILITE_STRUC" primaryKey="false" required="false" scale="0" size="100" type="12,VARCHAR2"/>
+        <column name="COTISATION_PARTICULIERE" primaryKey="false" required="false" scale="0" size="100" type="12,VARCHAR2"/>
+        <column name="TRANSMISSION_DONNEES_CROUS" primaryKey="false" required="false" scale="-127" size="0" type="3,NUMBER"/>
         <column name="NUM_BU" primaryKey="false" required="false" scale="0" size="8" type="3,NUMBER"/>
-        <column name="ID_PRES_UN" primaryKey="false" required="false" scale="0" size="0" type="12,VARCHAR2"/>
+        <column name="LEOCODE" primaryKey="false" required="false" scale="0" size="108" type="12,VARCHAR2"/>
+        <column name="LOGO_ETABLISSEMENT" primaryKey="false" required="false" scale="0" size="0" type="12,VARCHAR2"/>
         <column name="PHOTO" primaryKey="false" required="false" scale="0" size="0" type="12,VARCHAR2"/>
         <column name="DROIT_PHOTO" primaryKey="false" required="false" scale="-127" size="0" type="3,NUMBER"/>
-        <column name="STATUT" primaryKey="false" required="false" scale="0" size="9" type="1,CHAR"/>
+        <column name="ANNEE_UNIV" primaryKey="false" required="false" scale="-127" size="0" type="3,NUMBER"/>
+        <column name="SUAPS" primaryKey="false" required="false" scale="0" size="100" type="12,VARCHAR2"/>
+        <column name="ETABLISSEMENT" primaryKey="false" required="false" scale="0" size="100" type="12,VARCHAR2"/>
+        <column name="STATUT_CROUS" primaryKey="false" required="false" scale="0" size="100" type="12,VARCHAR2"/>
         <column name="INDICE" primaryKey="false" required="false" scale="0" size="4000" type="12,VARCHAR2"/>
         <column name="TARIF" primaryKey="false" required="false" scale="-127" size="0" type="3,NUMBER"/>
         <column name="NOM_CROUS" primaryKey="false" required="false" scale="0" size="40" type="12,VARCHAR2"/>
         <column name="PRENOM_CROUS" primaryKey="false" required="false" scale="0" size="20" type="12,VARCHAR2"/>
         <column name="ETAB_RNE" primaryKey="false" required="false" scale="0" size="8" type="12,VARCHAR2"/>
         <column name="COMP_RNE" primaryKey="false" required="false" scale="0" size="8" type="12,VARCHAR2"/>
-        <column name="EMAIL" primaryKey="false" required="false" scale="0" size="0" type="12,VARCHAR2"/>
+        <column name="EMAIL" primaryKey="false" required="false" scale="0" size="100" type="12,VARCHAR2"/>
         <column name="SOCIETE" primaryKey="false" required="false" scale="-127" size="0" type="3,NUMBER"/>
-        <column name="EMPLOYEUR" primaryKey="false" required="false" scale="0" size="19" type="1,CHAR"/>
-        <column name="TEL_PORT" primaryKey="false" required="false" scale="0" size="11" type="12,VARCHAR2"/>
-        <column name="ANNEE_UNIV" primaryKey="false" required="false" scale="-127" size="0" type="3,NUMBER"/>
-        <column name="CORPS" primaryKey="false" required="false" scale="0" size="40" type="12,VARCHAR2"/>
-        <column name="POPULATION" primaryKey="false" required="false" scale="0" size="40" type="12,VARCHAR2"/>
-        <column name="TYPE_POPULATION" primaryKey="false" required="false" scale="0" size="4" type="12,VARCHAR2"/>
-        <column name="CODE_BARRE" primaryKey="false" required="false" scale="0" size="8" type="3,NUMBER"/>
+        <column name="EMPLOYEUR" primaryKey="false" required="false" scale="0" size="100" type="12,VARCHAR2"/>
+        <column name="TEL_PORT" primaryKey="false" required="false" scale="0" size="100" type="12,VARCHAR2"/>
     </table>
 </database>

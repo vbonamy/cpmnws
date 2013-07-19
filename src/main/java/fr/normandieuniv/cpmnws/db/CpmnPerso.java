@@ -19,15 +19,10 @@ public class CpmnPerso {
     @Id
     @Column(name = "NO_INDIVIDU")
     private BigDecimal noIndividu;
-
-    @Column(name = "LIBELLE", columnDefinition = "char")
-    private String libelle;
-
-    @Column(name = "STATUT", columnDefinition = "char")
-    private String statut;
-
-    @Column(name = "EMPLOYEUR", columnDefinition = "char")
-    private String employeur;
+    
+    
+    @Column(name = "STATUT_POPULATION", columnDefinition = "char")
+    private String statutPopulation;
 
     public static TypedQuery<fr.normandieuniv.cpmnws.db.CpmnPerso> findCpmnPersoesByAnneeUnivEqualsAndNoIndividuEqualsAndNomCarteLike(BigDecimal anneeUniv, BigDecimal noIndividu, String nomCarte) {
         if (anneeUniv == null) throw new IllegalArgumentException("The anneeUniv argument is required");

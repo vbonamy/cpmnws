@@ -40,7 +40,6 @@ privileged aspect CpmnPersoController_Roo_Controller {
     
     void CpmnPersoController.addDateTimeFormatPatterns(Model uiModel) {
         uiModel.addAttribute("cpmnPerso_dnaissance_date_format", DateTimeFormat.patternForStyle("MM", LocaleContextHolder.getLocale()));
-        uiModel.addAttribute("cpmnPerso_ddebval_date_format", DateTimeFormat.patternForStyle("MM", LocaleContextHolder.getLocale()));
         uiModel.addAttribute("cpmnPerso_dfinval_date_format", DateTimeFormat.patternForStyle("MM", LocaleContextHolder.getLocale()));
     }
     

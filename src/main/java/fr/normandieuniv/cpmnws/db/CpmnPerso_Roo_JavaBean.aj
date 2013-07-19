@@ -16,28 +16,12 @@ privileged aspect CpmnPerso_Roo_JavaBean {
         this.noIndividu = noIndividu;
     }
     
-    public String CpmnPerso.getLibelle() {
-        return this.libelle;
+    public String CpmnPerso.getStatutPopulation() {
+        return this.statutPopulation;
     }
     
-    public void CpmnPerso.setLibelle(String libelle) {
-        this.libelle = libelle;
-    }
-    
-    public String CpmnPerso.getStatut() {
-        return this.statut;
-    }
-    
-    public void CpmnPerso.setStatut(String statut) {
-        this.statut = statut;
-    }
-    
-    public String CpmnPerso.getEmployeur() {
-        return this.employeur;
-    }
-    
-    public void CpmnPerso.setEmployeur(String employeur) {
-        this.employeur = employeur;
+    public void CpmnPerso.setStatutPopulation(String statutPopulation) {
+        this.statutPopulation = statutPopulation;
     }
     
 }
